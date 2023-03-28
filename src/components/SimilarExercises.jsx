@@ -3,9 +3,10 @@ import React from "react";
 import Loaders from './Loaders'
 import HorizontalScrollbar from './HorizontalScrollbar'
 import ExercisesCard from './ExercisesCard'
-import { borderRadius } from "@mui/system";
+import {Link as Scroll} from "react-scroll"
+
 const SimilarExercises = ({targetMuscleExercise,equipmentExercises}) => {
-  // 23224e
+
   return (
     <Box sx={{mt:{xs:'0',lg:'100px'} ,mb:'50px'}}>
 

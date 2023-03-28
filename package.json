@@ -13,11 +13,12 @@
     "react-horizontal-scrolling-menu": "^2.7.1",
     "react-loader-spinner": "^6.0.0-0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9"
   },
   "scripts": {
-    "predeploy":"npm run  build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run  build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

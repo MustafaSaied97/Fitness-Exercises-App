@@ -1,9 +1,9 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,useRef} from "react";
 import { Pagination,Box,Stack,Typography } from "@mui/material";
 import { exerciseOptions,fetchData } from "../utils/fetchData";
 import ExercisesCard from './ExercisesCard'
 import { Link } from "react-router-dom";
-
+import {Link as Scroll} from "react-scroll"
 const Exercises = ({exercises}) => {
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -16,9 +16,12 @@ const Exercises = ({exercises}) => {
     setCurrentPage(value)
   }
 
+ 
+
+
   return (
     <Box 
-      id="exercises" 
+      id="exercises"
       sx={{mt:{lg:'110px'}}}
       mt='50px'
       p='20px'
@@ -33,24 +36,24 @@ const Exercises = ({exercises}) => {
         ))}
       </Stack>
 
-      <a href='#exercises' style={{textDecoration:'none'}}>
-      <Stack mt='100px' alignItems='center'>
-          {exercises.length > 9 && (
-            <Pagination 
-              color="standard" 
-              shape='rounded' 
-              size="large" 
-
-              count={Math.ceil(exercises.length/exercisesPerPage)}
-              
-              defaultPage={1}  
-              page={currentPage} 
-              onChange={(e,value)=>paginate(e,value)}
-            />
-          )
-        }  
-      </Stack>
-      </a>
+      <Scroll to='exercises' style={{textDecoration:'none'}}>
+        <Stack mt='100px' alignItems='center'>
+            {exercises.length > 9 && (
+              <Pagination 
+                color="standard" 
+                shape='rounded' 
+                size="large" 
+            
+                count={Math.ceil(exercises.length/exercisesPerPage)}
+                
+                defaultPage={1}  
+                page={currentPage} 
+                onChange={(e,value)=>paginate(e,value)}
+              />
+            )
+          }  
+        </Stack>
+      </Scroll>
 
     </Box>
   );

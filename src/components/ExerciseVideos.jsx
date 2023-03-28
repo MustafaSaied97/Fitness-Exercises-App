@@ -1,7 +1,10 @@
 import React from "react";
 import { Stack,Box,Typography } from "@mui/material";
+
 const ExerciseVideos = ({exerciseVideos,name}) => {
   if(!exerciseVideos) return 'Loading...'
+
+
   return (
     <Box sx={{marginTop:{xs:'40px',lg:'200px'}}} p='20px'>
       <Typography  mb='33px'sx={{fontSize:{xs:'15px',md:'30px',lg:'40px'},p:'10px',background:'#18296e1c' ,width:'fit-content' ,borderRadius:'50px',boxShadow:'0 8px 32px 0 #00000017'}}>

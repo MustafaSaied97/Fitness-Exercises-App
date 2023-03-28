@@ -7,6 +7,7 @@ import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import RunCircleIcon from '@mui/icons-material/RunCircle';
 import LoopIcon from '@mui/icons-material/Loop';
+import {Link as Scroll} from "react-scroll"
 
 const HeroBanner = () => {
  const [words, setWords] = useState(['Sweat',<RunCircleIcon/>]);
@@ -41,9 +42,12 @@ const HeroBanner = () => {
       <img src={Person} alt="" style={{width:'150px' ,marginRight:'-520px',zIndex:'1000'}}  />
       <img src={Banner} alt="" style={{width:'900px',height:'900px'}} className='hero-banner'/>
     </Box>
-    <Button  variant='contained'  href='#exercises' sx={{backgroundColor:'#841fd2',padding:'10px',display:'block',width:'fit-content'}} >
-      Explore Exercises
-    </Button>
+
+    <Scroll to='exercises' style={{textDecoration:'none'}}>
+      <Button  variant='contained'   sx={{backgroundColor:'#841fd2',padding:'10px',display:'block',width:'fit-content'}} >
+        Explore Exercises
+      </Button>
+    </Scroll>
 
     <Typography fontWeight={600} color="#FF2625" sx={{ opacity: '0.1',background: 'linear-gradient(90deg, #841fd2,white)',backgroundClip:'text',color:'transparent', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
       Exercise

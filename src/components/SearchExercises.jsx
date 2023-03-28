@@ -4,6 +4,7 @@ import { Search } from '@mui/icons-material';
 import {exerciseOptions,fetchData} from '../utils/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 import BodyPart from "./BodyPart"
+import {Link as Scroll} from "react-scroll"
 
 const SearchExercises = ({setExercises}) => {
   const [search, setSearch] = useState('');
@@ -94,28 +95,32 @@ const SearchExercises = ({setExercises}) => {
             onKeyDown={(e)=>{e.key=="Enter"&& handleSearch()}}
 
           />
-          <a href='#exercises'style={{textDecoration:'none'}}>
-          <Button 
-            className='search-btn'
-            sx={{
-              backgroundColor:'#841fd2',
-              color:'#fff',
-              textTransform:'none',
-              width:{xs:'80px',lg:'175px'},
-              fontSize:{xs:'14px',lg:'20px'},
-              height:'56px',
-            }}
-            onClick={handleSearch}
-          >
-            Search
-          </Button>
-          </a>
+
+          <Scroll to='exercises' style={{textDecoration:'none'}}>
+            <Button 
+              className='search-btn'
+              sx={{
+                backgroundColor:'#841fd2',
+                color:'#fff',
+                textTransform:'none',
+                width:{xs:'80px',lg:'175px'},
+                fontSize:{xs:'14px',lg:'20px'},
+                height:'56px',
+              }}
+              onClick={handleSearch}
+            >
+              Search
+            </Button>
+          </Scroll>
+
         </Box>
+
         <Box sx={{position:'relative',width:'100%',minWidth:'300px',p:'20px',mt:'50px'}} className='glass'>
           <HorizontalScrollbar data={bodyParts}>
             <BodyPart  bodyPart={bodyPart}  setBodyPart={setBodyPart}/> 
           </HorizontalScrollbar>
         </Box>
+        
     </Stack>
   )
 };

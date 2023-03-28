@@ -34,8 +34,6 @@ const ExerciseDetail = () => {
   },[id])
 
   
-  // console.log(targetMuscleExercise)
-  // console.log(equipmentExercises)
   return (
     <Box>
         <Detail exerciseDetail={exerciseDetail}/>
