@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Fitness-Exercises-App/static/css/main.b582174a.css",
+    "main.js": "/Fitness-Exercises-App/static/js/main.b0b5baa7.js",
+    "static/media/equipment.png": "/Fitness-Exercises-App/static/media/equipment.8687e86cd24d4d9e92ed.png",
+    "static/media/target.png": "/Fitness-Exercises-App/static/media/target.aa59a741c2852c8915df.png",
+    "static/media/all.png": "/Fitness-Exercises-App/static/media/all.5ea43d52d069e7d8844b.png",
+    "static/media/body-part.png": "/Fitness-Exercises-App/static/media/body-part.5ea43d52d069e7d8844b.png",
+    "static/media/Person.png": "/Fitness-Exercises-App/static/media/Person.2bfcc0b8226babb9ac61.png",
+    "static/media/Logo.png": "/Fitness-Exercises-App/static/media/Logo.ddc94076248ea9415d07.png",
+    "static/media/upperLegs.png": "/Fitness-Exercises-App/static/media/upperLegs.4487a3a00d503b396030.png",
+    "static/media/back.png": "/Fitness-Exercises-App/static/media/back.f68b483196d72b1e1ebb.png",
+    "static/media/chest.png": "/Fitness-Exercises-App/static/media/chest.bddff2330f240414a914.png",
+    "static/media/arms.png": "/Fitness-Exercises-App/static/media/arms.62ee04db1b9cbba49c3f.png",
+    "static/media/lowerLegs.png": "/Fitness-Exercises-App/static/media/lowerLegs.5cc47139058639c6b560.png",
+    "static/media/waist.png": "/Fitness-Exercises-App/static/media/waist.f2c9177d9e3a43862660.png",
+    "static/media/shoulders.png": "/Fitness-Exercises-App/static/media/shoulders.d19c3c2387842512a1f3.png",
+    "static/media/Banner.svg": "/Fitness-Exercises-App/static/media/Banner.7b330ee84f6ccac71a177986b34fc611.svg",
+    "index.html": "/Fitness-Exercises-App/index.html",
+    "main.b582174a.css.map": "/Fitness-Exercises-App/static/css/main.b582174a.css.map",
+    "main.b0b5baa7.js.map": "/Fitness-Exercises-App/static/js/main.b0b5baa7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b582174a.css",
+    "static/js/main.b0b5baa7.js"
+  ]
+}
