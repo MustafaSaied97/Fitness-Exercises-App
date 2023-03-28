@@ -75,8 +75,8 @@ const SearchExercises = ({setExercises}) => {
 
   
   return (
-    <Stack  justifyContent='center'  alignItems='center'  mt='37px' p='200px' position='relative' sx={{maxWidth:'100vw'}}>
-        <Typography  fontWeight={800} sx={{fontSize:{xs:'20px',md:'30px',lg:'44px'}}} mb='50px' textAlign='center'> 
+    <Stack  justifyContent='center'  alignItems='center'  mt='200px' p='10px' position='relative' sx={{width:'100%'}}>
+        <Typography  fontWeight={800} sx={{fontSize:{xs:'20px',md:'30px',lg:'44px'},width:'100%'}} mb='50px' textAlign='center'> 
           Awsome Exercise You <br/> Should Know
         </Typography>
         <Box sx={{display:'flex'}}>
@@ -85,9 +85,10 @@ const SearchExercises = ({setExercises}) => {
               input:{
                 fontWeight:'700',
                 border:'none',
-                borderRadius:'0px'
+                borderRadius:'0px',
+                borderRadius:'10px'
               },
-              width:{xs:'300px',sm:'350px',lg:'800px'},
+              width:{xs:'80%',sm:'350px',lg:'800px'},
               backgroundColor:'#fff',
             }}
             type='text'
@@ -105,9 +106,10 @@ const SearchExercises = ({setExercises}) => {
                 backgroundColor:'#841fd2',
                 color:'#fff',
                 textTransform:'none',
-                width:{xs:'80px',lg:'175px'},
+                width:{xs:'30%',lg:'175px'},
                 fontSize:{xs:'14px',lg:'20px'},
                 height:'56px',
+                
               }}
               onClick={handleSearch}
             >
@@ -117,7 +119,7 @@ const SearchExercises = ({setExercises}) => {
 
         </Box>
 
-        <Box sx={{position:'relative',width:'100%',minWidth:'300px',p:'20px',mt:'50px'}} className='glass'>
+        <Box sx={{position:'relative',width:'100%',minWidth:'300px',p:'20px',mt:'50px' }} className='glass'>
           <HorizontalScrollbar data={bodyParts}>
             <BodyPart  bodyPart={bodyPart}  setBodyPart={setBodyPart}/> 
           </HorizontalScrollbar>
@@ -128,4 +130,7 @@ const SearchExercises = ({setExercises}) => {
 };
 
 export default SearchExercises;
+
+
+
 
