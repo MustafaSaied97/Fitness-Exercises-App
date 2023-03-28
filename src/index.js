@@ -7,8 +7,8 @@ const root=ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
     <StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <App/>
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>
 )
